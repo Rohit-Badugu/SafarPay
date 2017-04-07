@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "217526448901",
+    "firebase_url": "https://sihtoll-1e5ec.firebaseio.com",
+    "project_id": "sihtoll-1e5ec",
+    "storage_bucket": "sihtoll-1e5ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217526448901:android:a6ce6b9703e6200c",
+        "android_client_info": {
+          "package_name": "com.toll.tollapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217526448901-l8vpq7s0o8ooomlqb22d2d74d7totebr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSeggSuJywRxh0IZVfTycTYQn0TpzdKTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

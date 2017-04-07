@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f27c15</color>
+    <color name="colorPrimaryDark">#f27c15</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="launcher_background">#eeeeee</color>
+    <color name="flat_pressed">#66999999</color>
+    <color name="flat_disabled_text">#40000000</color>
+    <color name="flat_normal_text">#000000</color>
+    <color name="orange">#f27c15</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="menu_orange">#ff5722</color>
+
+    <color name="gray">#212121</color>
+</resources>

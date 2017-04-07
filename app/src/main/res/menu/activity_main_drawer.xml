@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Personalize">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/finalprofile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/payments"
+                android:icon="@drawable/finaltran"
+                android:title="My Transactions" />
+        </menu>
+    </item>
+    <item android:title="Toll Details">
+        <menu>
+            <item
+                android:id="@+id/toll_cost"
+                android:icon="@drawable/calculator_icon"
+                android:title="Toll tax Calculator" />
+            <item
+                android:id="@+id/search_toll"
+                android:icon="@drawable/finalsearch"
+                android:title="Search Toll Plaza" />
+        </menu>
+    </item>
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/finalaboutus"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>

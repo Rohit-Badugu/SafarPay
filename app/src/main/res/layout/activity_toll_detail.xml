@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.toll.tollapp.TollDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/det_tollbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_toll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context="com.toll.tollapp.TollDetailActivity">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/det_toll"
+                    app:cardCornerRadius="5dp"
+                    android:elevation="5dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:src="@drawable/toll"
+                            android:layout_height="210dp" />
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/det_toll_name"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Thane Toll Plaza"
+                            android:textSize="24sp"
+                            />
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            >
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#2196f3"
+                            android:text=" Show in Map"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/show_map"
+                            android:elevation="5dp"
+                            style="?borderlessButtonStyle"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/price_table"
+                    android:layout_below="@id/det_toll"
+                    android:layout_marginTop="35dp"
+                    android:drawingCacheQuality="high"
+                    android:stretchColumns="1">
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+
+                    <TableRow>
+                        <TextView
+                            android:layout_column="1"
+                            android:text="Vehicle"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:padding="3dp"
+                            />
+                        <TextView
+                            android:layout_gravity="right"
+                            android:id="@+id/amt_rs"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:padding="3dp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090" />
+
+
+                    <TableRow
+                        android:padding="3dp">
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_column="1"
+                            android:text="Car / Jeep /Van "
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_marginRight="15dp"
+                            android:text="60"
+                            android:id="@+id/car_price"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_height="1dip"
+                        android:background="#FF909090"
+                        />
+
+                    <TableRow
+                        android:padding="3dp">
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_column="1"
+                            android:text="Bike / Scooter"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                        <android.support.v7.widget.AppCompatTextView
+                            android:text="45"
+                            android:id="@+id/det_bike"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    </TableRow>
+                    <View
+                        android:layout_height="1dip"
+                        android:background="#FF909090" />
+                    <TableRow
+                        android:padding="3dp">
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_column="1"
+                            android:text="Bus"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:text="70"
+                            android:id="@+id/bus_price"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    </TableRow>
+                    <View
+                        android:layout_height="1dip"
+                        android:background="#FF909090" />
+                    <TableRow
+                        android:padding="3dp">
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_column="1"
+                            android:text="Truck / Heavy Vehicles"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                        <android.support.v7.widget.AppCompatTextView
+                            android:text="90"
+                            android:id="@+id/truck_price"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    </TableRow>
+                    <View
+                        android:layout_height="2dip"
+                        android:background="#FF909090"
+                        android:id="@+id/table_bottom"/>
+
+                </TableLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Services"
+                    android:layout_below="@id/price_table"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp" />
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dip"
+                    android:background="#FF909090"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="12dp"
+                        android:id="@+id/view2"
+                        app:cardCornerRadius="40dp"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        android:background="#cfd8dc">
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="match_parent"
+                            android:id="@+id/imageView1"
+                            android:src="@drawable/first_aid"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true">
+                        </ImageView>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:elevation="12dp"
+                        android:id="@+id/view3"
+                        app:cardCornerRadius="40dp"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        android:background="#cfd8dc">
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="match_parent"
+                            android:id="@+id/imageView2"
+                            android:src="@drawable/police_car"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true">
+                        </ImageView>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </RelativeLayout>
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
